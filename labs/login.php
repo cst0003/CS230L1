@@ -1,78 +1,64 @@
+
 <?php
 require 'includes/header.php'
 ?>
 
 <main>
-<link rel="stylesheet" href="css/about.css">
-    <div class="about">
-        <h1>About Us</h1>
-    </div>
-    <div class="name">
-        Task Force 141
-
-    </div>
-
-    <div class="motto">
-        Who Dares Wins
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="images/price.jpg">
-                <div class="text">
-                    <h2>Captain</h2>
-                    <p> John Price</p>
-                    <p>British Army </p>
+<link rel="stylesheet" href="css/login.css">
+    <div class="bg-cover">
+        <div class="row">
+            <div id="slides" class="carousel slide col-md-8 offset-md-2" data-ride="carousel" style="margin-top:80px; margin-bottom: 30px;">
+                <ol class="carousel-indicators">
+                    <li data-target="slides" data-slide-to="0" class="active"></li>
+                    <li data-target="slides" data-slide-to="1"></li>
+                    <li data-target="slides" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel1.jpg" class="d-block mx-auto ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel2.jpg" class="d-block mx-auto ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel3.jpg" class="d-block mx-auto ">
+                    </div>
                 </div>
-                <dif class="bio">
-                    <a href="https://callofduty.fandom.com/wiki/John_Price_(2019)"><button> Profile Bio</button>
-                </dif>
+                <a class="carousel-control-prev" href="slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <img src="images/ghost.jpg">
-                <div class="text">
-                    <h2>Operator</h2>
-                    <p> Simon "Ghost" Riley</p>
-                    <P> SAS</P>
-                </div>
-                <a href="https://callofduty.fandom.com/wiki/Simon_%22Ghost%22_Riley"><button> Profile Bio</button>
 
-            </div>
-        </div>
 
-        <div class="column">
-            <div class="card">
-                <img src="images/soap.jpg">
-                <div class="text">
-                    <h2>Captain</h2>
-                    <p> John "Soap" MacTavish</p>
-                    <p> SAS</p>
-                </div>
-                <a href="https://callofduty.fandom.com/wiki/John_%22Soap%22_MacTavish_(Original)"><button> Profile
-                        Bio</button>
 
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="images/gaz.jpg">
-                <div class="text">
-                    <h2>Sgt</h2>
-                    <p> Kyle "Gaz" Garrick.</p>
-                    <p> SAS</p>
-                </div>
-                <a
-                    href="https://callofduty.fandom.com/wiki/Gaz#:~:text=Lieutenant%20Gaz%2C%20callsign%20Bravo%20Five,of%20Duty%3A%20Modern%20Warfare%20Remastered."><button>
-                        Profile Bio</button>
 
+        <div class="h-55 center-me">
+            <div class="my-auto">
+                <form class="form-signin" action="includes/login-helper.php" method="post" style="background: white;">
+                    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                    <label for="inputEmail" class="sr-only">Username or Email Address</label>
+                    <input type="text" id="inputEmail" name="uname" class="form-control" placeholder="Username/Email" required
+                        autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" name="pwd" class="form-control" placeholder="Password" required>
+                    <div class="checkbox mb-3" style="margin:10px">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-dark btn-block" name="login-submit" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+                </form>
             </div>
         </div>
     </div>
 
 
 </main>
-

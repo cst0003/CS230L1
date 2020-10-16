@@ -17,17 +17,28 @@ img{
 }
 
 .gallery-container{
-   
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .card {
-  
-
+  border-radius: 10px;
+    margin:10px;
+    width: 20%;
+    max-width: 280px;
+    height: auto;
+        padding: 5px;
 }
 .gallery-container a{
-
+    background-color: black;
+    background-position: center;
+    background-size: cover;
 }
 
 .gallery-container a:hover{
-    
+    opacity: 90%;
+    text-decoration-color: gold;
 }

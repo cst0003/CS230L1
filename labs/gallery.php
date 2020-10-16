@@ -1,5 +1,6 @@
 <?php
 require 'includes/header.php';
+//require 'includes/dbhandler.php'
 ?>
 
 <main>
@@ -7,7 +8,7 @@ require 'includes/header.php';
     <h1>Gallery</h1>
     <div class="gallery-container">
         <?php
-        include_once 'includes/db.handler.php';
+        include_once 'includes/dbhandler.php';
         $sql = "SELECT * FROM features ORDER BY upload_date DESC";
         $stmt = mysqli_stmt_init($conn);
 

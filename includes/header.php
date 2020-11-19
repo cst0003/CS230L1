@@ -35,7 +35,7 @@ session_start();
                         <a class="nav-link" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Lab1/admin.php">Admin</a>
+                        <a class="nav-link" href="admin.php">Admin</a>
                         </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
@@ -47,13 +47,13 @@ session_start();
                         </li>
                         
                         <li class = "nav-item">
-                        <a class="nav-link" href="../Lab1/signup.php">Sign Up</a>
+                        <a class="nav-link" href="../signup.php">Sign Up</a>
                         </li>';
                         
                     }
                     ?>
                     <li class="nav-item active">
-                        <a class="nav-link" href="../Lab1/index.php">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

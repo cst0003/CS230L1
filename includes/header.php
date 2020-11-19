@@ -35,6 +35,9 @@ session_start();
                         <a class="nav-link" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="../Lab1/admin.php">Admin</a>
+                        </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>';
                     }
@@ -42,9 +45,11 @@ session_start();
                         echo '<li class="nav-item">
                         <a class="nav-link" href="login.php">Login</a>
                         </li>
+                        
                         <li class = "nav-item">
                         <a class="nav-link" href="../Lab1/signup.php">Sign Up</a>
                         </li>';
+                        
                     }
                     ?>
                     <li class="nav-item active">
